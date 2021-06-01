@@ -1,0 +1,107 @@
+body > main {
+  padding: 0 10rem;
+}
+
+main table {
+  width: 100%;
+  margin-top: -3rem;
+  border-spacing: 0 0.5rem;
+}
+
+main table tr {
+  width: 100%;
+  height: 6rem;
+  background: var(--shape-box);
+}
+
+main table tr + tr {
+  margin-top: 0.5rem;
+}
+
+main table td {
+  border: 1px solid var(--shape-corner);
+  border-left-width: 0;
+  border-right-width: 0;
+  font-family: Inter;
+}
+
+main table td.td-index {
+  padding-left: 2rem;
+  border-left-width: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: var(--text-complement);
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
+}
+
+main table td.td-title {
+  font-size: 1.5rem;
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
+  color: var(--text-h1);
+}
+
+main table td.td-double-text span {
+  color: var(--text-complement);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+
+main table td.td-double-text p {
+  color: var(--text-h2);
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+
+main table td.td-status div {
+  width: 9.375rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+main table td.td-status.in-progress div {
+  background: var(--shape-greenlow);
+  color: var(--secondary-green);
+}
+
+main table td.td-status.ended div {
+  background: var(--shape-redlow);
+  color: var(--secondary-red);
+}
+
+main table td.td-buttons {
+  border-right-width: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 2rem;
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main table td.td-buttons button {
+  background: transparent;
+  border: 1px solid var(--shape-corner);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 5px;
+}
+
+main table td.td-buttons button + button {
+  margin-left: 0.5rem;
+}
+
+main table td.td-buttons button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--text-h2);
+}

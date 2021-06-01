@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" >
+  <title>JobsCalc</title>
+</head>
+<body>
+  <header>
+    <div id="header-top">
+      <img src="../assets/logo.svg" alt="JobsCalc">
+      <div id="freetime-container">
+        <i data-feather="alert-octagon"></i>
+        <p>Você tem 2 horas livres no seu dia</p>
+      </div>
+      <div id="profile-container">
+        <div>
+          <p>Jaqueline</p>
+          <span>ver perfil</span>
+        </div>
+        <img src="../assets/user.png" alt="User">
+      </div>
+    </div>
+    <div id="header-bottom">
+      <div>
+        <div class="header-info">
+          <p id="total-jobs">0</p>
+          <span>Projetos ao total</span>
+        </div>
+        <div class="header-info">
+          <p id="in-progress-jobs-count">0</p>
+          <span>Em andamento</span>
+        </div>
+        <div class="header-info">
+          <p id="ended-jobs-count">0</p>
+          <span>Encerrados</span>
+        </div>
+      </div>
+      <button onclick="openModal()">
+        <div>
+          <i data-feather="plus"></i>
+        </div>
+        <p>ADICIONAR NOVO JOB</p>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <table>
+      <tbody>
+      </tbody>
+    </table>
+  </main>
+
+  <div id="modal-container">
+    <div id="modal">
+      <main>
+        <h1>Dados do Job</h1>
+        <form onsubmit="handleSubmit(event)">
+          <div id="name-container" class="form-input">
+            <h2>Nome do jobs</h2>
+            <input id="name-input" type="text">
+          </div>
+          <div id="dedicated-time-container" class="form-input">
+            <h2>
+              Quantas horas <br> 
+              por dia vai dedicar ao Job?
+            </h2>
+            <input id="dedicated-time-input" type="number">
+          </div>
+          <div id="total-time-container" class="form-input">
+            <h2>
+              Estimativa de <br> 
+              horas para esse jobs
+            </h2>
+            <input id="total-time-input" type="number">
+          </div>
+        </form>
+      </main>
+
+      <aside>
+        <img src="../assets/money.svg" alt="money">
+        <p>Preencha os dados ao lado para ver o valor do projeto</p>
+        <div>
+          <button type="submit" onclick="handleSubmitButtonClick()">
+            SALVAR
+          </button>
+          <button>
+            <i data-feather="trash"></i>
+          </button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script src="../scripts/index.js"></script>
+</body>
+</html>

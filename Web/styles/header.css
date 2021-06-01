@@ -1,0 +1,154 @@
+header {
+  width: 100%;
+  height: 17.5rem;
+  background: var(--gray);
+  padding: 1.5rem 10rem 0;
+}
+
+header > div#header-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+header > div#header-top::after {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  bottom: -1rem;
+  background: #4F4F5B;
+}
+
+header > div#header-top div#freetime-container {
+  display: flex;
+}
+
+header > div#header-top div#freetime-container svg {
+  color: var(--orange);
+  width: 20px;
+  size: 20px;
+}
+
+header > div#header-top div#freetime-container svg line[y1="8"], 
+header > div#header-top div#freetime-container svg line[y1="16"] {
+  color: var(--shape-background);
+}
+
+header > div#header-top div#freetime-container p {
+  color: var(--shape-box);
+  font-family: Inter;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+header > div#header-top div#profile-container {
+  display: flex;
+  align-items: center;
+}
+
+header > div#header-top div#profile-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header > div#header-top div#profile-container div p {
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
+  color: var(--shape-box);
+  line-height: 1.875rem;
+}
+
+header > div#header-top div#profile-container div span {
+  font-size: 0.875rem;
+  font-family: 'IBM Plex Sans';
+  color: var(--text-complement);
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+header > div#header-top div#profile-container img {
+  margin-left: 1.25rem;
+}
+
+header > div#header-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+header > div#header-bottom > div {
+  display: flex;
+  align-items: center;
+}
+
+header > div#header-bottom > div > div.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header > div#header-bottom > div > div.header-info + div.header-info {
+  margin-left: 2.5rem;
+}
+
+header > div#header-bottom > div > div.header-info p {
+  color: var(--shape-box);
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+}
+
+header > div#header-bottom > div > div.header-info span {
+  color: var(--text-complement);
+  font-family: Inter;
+  line-height: 1.625rem;
+}
+
+header > div#header-bottom > button {
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
+  border: 0;
+  border-radius: 5px;
+  background: var(--orange);
+  display: flex;
+  align-items: center;
+
+  will-change: filter;
+  transition: filter 0.2s;
+}
+
+header > div#header-bottom > button:hover {
+  filter: brightness(0.9);
+}
+
+header > div#header-bottom > button > div {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5px;
+  background: rgba(252, 253, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header > div#header-bottom > button > div svg {
+  color: var(--shape-box);
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+}
+
+header > div#header-bottom > button p {
+  color: var(--shape-box);
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  line-height: 1.625rem;
+  font-size: 0.875rem;
+  margin-left: 2rem;
+}

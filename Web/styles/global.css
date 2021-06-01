@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+:root {
+  --gray: #41414c;
+  --orange: #F1972C;
+
+  --secondary-red: #EB3B35;
+  --secondary-green: #36B236;
+
+  --text-h1: #5A5A66;
+  --text-h2: #787880;
+  --text-complement: #BFBFCC;
+
+  --shape-greenlow: #E8F8E8;
+  --shape-redlow: #FAECEB;
+  --shape-corner: #E1E3E5;
+  --shape-lines: #E1E3E5;
+  --shape-background: #F0F2F5;
+  --shape-box: #FCFDFF;
+}
+
+body {
+  background: var(--shape-background);
+}
+
+h1 {
+  color: var(--text-h1);
+}
+
+h2 {
+  color: var(--text-h2);
+}
+
+button {
+  cursor: pointer;
+}
